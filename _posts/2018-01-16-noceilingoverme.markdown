@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Noceilingoverme"
-date:       2018-01-16 10:24:06 +0000
+title:      "No Ceiling Over Me"
+date:       2018-01-16 05:24:07 -0500
 permalink:  noceilingoverme
 ---
 
