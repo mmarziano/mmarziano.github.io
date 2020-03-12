@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Javascript Web Tokens"
-date:       2020-03-09 14:15:59 +0000
+date:       2020-03-09 10:16:00 -0400
 permalink:  javascript_web_tokens
 ---
 
@@ -91,3 +91,18 @@ class ApplicationController < ActionController::API
     
 end
 ```
+
+When sending a request via fetch, make sure your headers include  
+          
+"Authorization" : `Bearer ${localStorage.getItem('token')}`
+
+You can use localStorage to maintain the user information even if the browser window is closed.  Otherwise, sessionStorage is recommended since user information is lost once the browser is closed.  
+
+LocalStorage and sessionStorage can both be set once the user has successfully authenticated the first time.  Use .setItem('any description here'). In your console, you can check if there is something saved by typing 
+
+localStorage.getItem('any description here')
+
+
+
+			
+          
